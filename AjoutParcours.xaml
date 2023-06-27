@@ -1,0 +1,31 @@
+﻿<Window x:Class="FKM.AjoutParcours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FKM"
+        mc:Ignorable="d"
+        Title="AjoutParcours" Height="600" Width="500">
+    <Grid>
+        <UniformGrid Columns="1">
+            <GroupBox Header="Parcours" Grid.Row="0">
+                <DatePicker x:Name="Date"></DatePicker>
+            </GroupBox>
+            <UniformGrid Columns="1">
+           <Label Content="Depart"></Label>
+                <TextBox x:Name="Depart"></TextBox>
+            <Label Content="Arrivée"></Label>
+                <TextBox x:Name="Arrivee"></TextBox>
+            <Label Content="Distance"></Label>
+                <TextBox x:Name="Distance"></TextBox>
+            <Label Content="Montant Ticket"></Label>
+                <TextBox x:Name="Ticket"></TextBox>
+        </UniformGrid>
+        <UniformGrid Rows ="1" Height="100">
+            <Button Content="Ajouter" Click="Button_Click_1"></Button>
+            <Button Content="Fermer" Click="Button_Click"></Button>
+        </UniformGrid>
+            
+        </UniformGrid>
+    </Grid>
+</Window>

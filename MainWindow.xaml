@@ -1,0 +1,27 @@
+﻿<Window x:Class="FKM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FKM"
+        mc:Ignorable="d"
+        Title="Gestion FKM" Height="600" Width="600">
+    <Grid>
+        <UniformGrid Columns="1">
+        <DataGrid x:Name="DataParcours" />
+            <UniformGrid Columns="1">
+                <GroupBox Header="Salarie"/>
+                <Label Content="Prenom"></Label>
+                <TextBox x:Name="Prenom"></TextBox>
+                <Label Content="Nom"></Label>
+            <TextBox x:Name="Nom"></TextBox>
+                  
+           </UniformGrid>
+            <UniformGrid Columns ="1">
+            <Button Content="Ajouter Parcours" Click="Button_Click"></Button>
+            <Button Content="Extraire dans XL" Click="Button_Click_1"></Button>
+            <Button Content="Afficher XL" Click="Button_Click_2"></Button>
+            </UniformGrid>
+      </UniformGrid>
+    </Grid>
+</Window>
